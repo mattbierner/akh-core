@@ -1,0 +1,19 @@
+{
+    "name": "akh.core",
+    "version": "0.0.0",
+    "description": "Core logic for akh",
+    "author": "Matt Bierner",
+    "license": "MIT",
+    "keywords": [
+        "monad transformer",
+        "akh"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattbierner/akh-core.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mattbierner/akh-core/issues"
+    },
+    "main": "index.js"
+}
