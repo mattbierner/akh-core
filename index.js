@@ -37,8 +37,8 @@ const liftM = module.exports.liftM = map
  */
 const liftM2 = module.exports.liftM2 = (f, m1, m2) =>
     m1.chain(x =>
-    m2.map(y =>
-        f(x, y)))
+        m2.map(y =>
+            f(x, y)))
 
 /* Applicative Lifting
  ******************************************************************************/
@@ -61,8 +61,7 @@ const liftA2 = module.exports.liftA2 = (f, a1, a2) =>
  * Left-to-right Kleisli composition.
  */
 const compose = module.exports.compose = (f, g) =>
-    x =>
-        f(x).chain(g)
+    x => f(x).chain(g)
 
 /**
  * right-to-right Kleisli composition.
@@ -86,4 +85,4 @@ const sequencea = module.exports.sequencea = (arr) => Array.prototype.reduce.cal
 /**
  * Perform a sequence of computations from arguments left to right.
  */
-const sequence = module.exports.sequence = function() { return sequencea(arguments) }
+const sequence = module.exports.sequence = function () { return sequencea(arguments) }
