@@ -4,7 +4,7 @@ Can either be used directly or through `akh`
 
 ```bash
 # Direct usage
-$ npm install --save akh-core
+$ npm install --save akh.core
 require('akh.core')
 
 # Through akh
