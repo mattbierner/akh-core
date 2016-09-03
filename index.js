@@ -6,7 +6,7 @@ const flip = f => (x, y) => f(y, x)
 /* Generic versions of ops
  ******************************************************************************/
 /**
- * Chain `f` onto monad `c`, getting monad type from `m`.
+ * Chain `f` onto monad `m`, getting monad type from `m`.
  */
 const chain = module.exports.chain = (m, f) => m.chain(f)
 
@@ -48,7 +48,7 @@ const liftM2 = module.exports.liftM2 = (f, m1, m2) =>
 const liftA = module.exports.liftA = (f, a) => a.of(f).ap(a)
 
 /**
- * Lift binary function `f` to an applicative, getting arguments from applicative values.
+ * 
  */
 const liftA2 = module.exports.liftA2 = (f, a1, a2) =>
     a1.of(x => y => f(x, y))
@@ -64,7 +64,7 @@ const compose = module.exports.compose = (f, g) =>
     x => f(x).chain(g)
 
 /**
- * right-to-right Kleisli composition.
+ * Right-to-left Kleisli composition.
  */
 const composer = module.exports.composer = flip(compose)
 

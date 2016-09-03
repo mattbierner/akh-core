@@ -15,5 +15,10 @@
     "bugs": {
         "url": "https://github.com/mattbierner/akh-core/issues"
     },
-    "main": "index.js"
+    "main": "index.js",
+    "devDependencies": {
+        "akh.state": "^0.0.0",
+        "chai": "*",
+        "mocha": "*"
+    }
 }
