@@ -1,4 +1,4 @@
-# Core logic for [Akh avascript Monad Transformer Library](https://github.com/mattbierner/akh)
+# Core logic for [Akh Javascript Monad Transformer Library](https://github.com/mattbierner/akh)
 
 Can either be used directly or through `akh` 
 
@@ -8,7 +8,7 @@ $ npm install --save akh.core
 require('akh.core')
 
 # Through akh
-$ npm nistall --save akh
+$ npm install --save akh
 require('akh').base
 ```
 
