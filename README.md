@@ -8,8 +8,9 @@ $ npm install --save akh.core
 require('akh.core')
 
 # Through akh
+# All functions are top level exports
 $ npm install --save akh
-require('akh').base
+require('akh')
 ```
 
 ## Usage
